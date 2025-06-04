@@ -1,6 +1,7 @@
 import mongoose, {model, Schema} from "mongoose";
+import {MONGO_URL} from "./config";
 
-mongoose.connect("mongodb+srv://boiciuctyby27:EQZ6qsh364xUFMK5@cluster0.ic5enly.mongodb.net/test")
+mongoose.connect(`${MONGO_URL}`)
 const UserSchema = new Schema({
     username: { type: String, unique: true },
     password :{ type: String }
