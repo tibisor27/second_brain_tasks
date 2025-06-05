@@ -8,3 +8,4 @@ className={iconSizeVariants[props.size]}>
 </svg>
 
 }
+ 
