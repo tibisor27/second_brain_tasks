@@ -1,11 +1,13 @@
 import './App.css'
-import {Button} from './components/Button'
+import { Button } from './components/Button'
+import { PlusIcon } from './icons/PlusIcon'
 
 function App() {
   return (
     <>
-      <Button variant="primary" text="Share"/>
-      <Button variant="secondary" text="Add Content" />
+      <Button startIcon={<PlusIcon/>} size = "sm" variant="primary" text="Share"/>
+      <Button size = "md" variant="secondary" text="Add conte"/>
+      <Button size = "lg" variant="secondary" text="Add Content" />
       </>
   )
 }
